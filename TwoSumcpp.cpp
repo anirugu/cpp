@@ -6,34 +6,37 @@
 
 using namespace std;
 
-vector<int> twoSum(vector<int>&, int);
+vector<int> twoSum(vector<int> &, int);
 
 int main()
 {
-	vector<int> input = { 3,2,4 };
+	vector<int> input = {3, 2, 4};
 	vector<int> result = twoSum(input, 6);
 	std::cout << "Hello World!\n";
 }
 
-vector<int> twoSum(vector<int>& nums, int target) {
-	for (int i = 0; i < nums.size(); i++) {
+vector<int> twoSum(vector<int> &nums, int target)
+{
+	for (int i = 0; i < nums.size(); i++)
+	{
 		int c = nums[i];
-		for (int j = i + 1; j < nums.size(); j++) {
+		for (int j = i + 1; j < nums.size(); j++)
+		{
 			int sc = nums[j];
 			if (nums[i] + nums[j] == target)
 			{
-				vector<int> result = { i, j };
+				vector<int> result = {i, j};
 				return result;
 			}
 		}
 	}
-	return vector<int> {};
+	return vector<int>{};
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages
