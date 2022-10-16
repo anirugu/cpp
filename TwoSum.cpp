@@ -6,18 +6,27 @@
 
 using namespace std;
 
-vector<int> twoSum(vector<int> &, int);
+vector<int> twoSum(vector<int>&, int);
 
 int main()
 {
-	vector<int> input = {3, 2, 4};
+	vector<int> input = { 3, 2, 4 };
 	vector<int> result = twoSum(input, 6);
-	std::cout << "Hello World!\n";
 }
 
-vector<int> twoSum(vector<int> &nums, int target)
+vector<int> twoSum(vector<int>& nums, int target)
 {
-	for (int i = 0; i < nums.size(); i++)
+	for (int i = 0; i < nums.size(); i++) {
+		auto remainder = target - nums[i];
+		cout << remainder << endl;
+		auto result = find(nums.begin(), nums.end(), remainder);
+		if (result != nums.end())
+		{
+			auto index = result - nums.begin();
+		}
+	}
+
+	/*for (int i = 0; i < nums.size(); i++)
 	{
 		int c = nums[i];
 		for (int j = i + 1; j < nums.size(); j++)
@@ -29,7 +38,7 @@ vector<int> twoSum(vector<int> &nums, int target)
 				return result;
 			}
 		}
-	}
+	}*/
 	return vector<int>{};
 }
 
