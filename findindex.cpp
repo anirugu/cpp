@@ -1,13 +1,12 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <bits/c
 
 using namespace std;
 
 int main()
 {
-    vector<int> vals{11, 23, 213, 334};
-    auto it = find(vals.begin(), vals.end(), 21113);
-    int index = it - vals.begin();
-    cout << index << "This is testing" << endl;
+    vector<int> vals{1, 2, 3, 4};
+    auto it = find(vals.begin(), vals.end(), 5);
+    cout << count;
 }

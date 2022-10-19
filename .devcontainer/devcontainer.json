@@ -13,11 +13,23 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	 "postCreateCommand": "uname -a && sudo apt-get update -y && sudo apt install ubuntu-release-upgrader-core && sudo apt upgrade && sudo apt-get install -y build-essential gdb",
+	//"postCreateCommand": "uname -a && sudo apt-get update -y && sudo apt install ubuntu-release-upgrader-core && sudo apt upgrade && sudo apt-get install -y build-essential gdb",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	//"remoteUser": "vscode",
+	"features": {
+		"docker-from-docker": "latest",
+		"git": "latest",
+		"git-lfs": "latest",
+		"github-cli": "latest",
+		"node": "lts",
+		"java": "lts",
+		"dotnet": "latest"
+	},
 	"customizations": {
+		"codespaces": {
+
+		},
 		"vscode": {
 			"extensions": [
 				"ms-vscode.cpptools",
