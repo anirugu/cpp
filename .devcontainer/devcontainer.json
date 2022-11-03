@@ -1,7 +1,7 @@
 {
 	"name": "Ubuntu",
 	//"image": "mcr.microsoft.com/devcontainers/base:0-jammy",
-	"image": "ubuntu:22.10"
+	"image": "ubuntu:kinetic-20221101"
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
