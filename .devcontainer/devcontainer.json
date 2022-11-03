@@ -1,13 +1,23 @@
 {
 	"name": "Ubuntu",
 	//"image": "mcr.microsoft.com/devcontainers/base:0-jammy",
-	"image": "ubuntu:kinetic-20221101"
+	"image": "ubuntu:kinetic-20221101",
+	"extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cpptools-extension-pack",
+		"VisualStudioExptTeam.vscodeintellicode",
+		"VisualStudioExptTeam.intellicode-api-usage-examples",
+		"VisualStudioExptTeam.vscodeintellicode-completions",
+		"esbenp.prettier-vscode",
+		"ms-vscode.cmake-tools",
+		"twxs.cmake"
+	],
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	 "postCreateCommand": "apt update && apt-get -y install git nodejs build-essential gdb"
 	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	//"remoteUser": "vscode",
+	//"remoteUser": "vscode"
 	// "features": {
 	// 	"ghcr.io/devcontainers/features/docker-from-docker:latest": {},
 	// 	"ghcr.io/devcontainers/features/dotnet:latest": {},
