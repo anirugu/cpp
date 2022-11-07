@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main()
 
 vector<int> twoSum(vector<int>& nums, int target)
 {
+	
 	for (int i = 0; i < nums.size(); i++) {
 		auto remainder = target - nums[i];
 		cout << remainder << endl;
