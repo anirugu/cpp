@@ -1,12 +1,32 @@
 {
-	"extensions": [
-		"ms-vscode.cpptools",
-		"ms-vscode.cpptools-extension-pack",
-		"VisualStudioExptTeam.vscodeintellicode",
-		"VisualStudioExptTeam.intellicode-api-usage-examples",
-		"VisualStudioExptTeam.vscodeintellicode-completions",
-		"esbenp.prettier-vscode",
-		"ms-vscode.cmake-tools",
-		"twxs.cmake"
-	]
+  "name": "Ubuntu",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/dotnet:1": {}
+  },
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+   "postCreateCommand": "uname -a && sudo apt-get update -y && sudo apt-get install -y build-essential gdb git",
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root",
+  "extensions": [
+    "ms-vscode.cpptools",
+    "ms-vscode.cpptools-extension-pack",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "VisualStudioExptTeam.intellicode-api-usage-examples",
+    "VisualStudioExptTeam.vscodeintellicode-completions",
+    "esbenp.prettier-vscode",
+    "ms-vscode.cmake-tools",
+    "twxs.cmake"
+  ]
 }
