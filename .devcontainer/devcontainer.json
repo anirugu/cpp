@@ -2,17 +2,17 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
 	"name": "Default Linux Universal",
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
-	"features": {
-		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/dotnet:1": {
-			"version": "lts"
-		}
-	},
+	"image": "ubuntu:kinetic-20221101",
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/node:1": {},
+	// 	"ghcr.io/devcontainers/features/dotnet:1": {
+	// 		"version": "lts"
+	// 	}
+	// },
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "uname -a && sudo apt-get update -y && sudo apt-get install -y build-essential gdb git",
+	//"postCreateCommand": "apt-get update -y && apt-get install -y build-essential gdb git",
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
