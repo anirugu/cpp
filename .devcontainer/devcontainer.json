@@ -1,9 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+// README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-	"name": "Ubuntu",
-	"image": "mcr.microsoft.com/devcontainers/base:jammy"
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"name": "Default Linux Universal",
+	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
 	"features": {
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/dotnet:1": {
