@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
 	"name": "Default Linux Universal",
-	"image": "ubuntu:kinetic-20221130",
+	"image": "ubuntu:lunar-20221207",
 	// "features": {
 	// 	"ghcr.io/devcontainers/features/node:1": {},
 	// 	"ghcr.io/devcontainers/features/dotnet:1": {
