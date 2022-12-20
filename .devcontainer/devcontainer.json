@@ -27,6 +27,7 @@
 		"esbenp.prettier-vscode",
 		"ms-vscode.cmake-tools",
 		"twxs.cmake",
-		"ms-dotnettools.dotnet-interactive-vscode"
+		"ms-dotnettools.dotnet-interactive-vscode",
+		"ms-azuretools.vscode-docker"
 	]
 }
