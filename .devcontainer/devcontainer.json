@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
 	"name": "Default Linux Universal",
-	"image": "ubuntu:lunar-20221207",
+	//"image": "ubuntu:lunar-20221207",
 	// "features": {
 	// 	"ghcr.io/devcontainers/features/node:1": {},
 	// 	"ghcr.io/devcontainers/features/dotnet:1": {
@@ -13,7 +13,7 @@
 	// "forwardPorts": [5000, 5001],
 	// Use 'postCreateCommand' to run commands after the container is created.
 	//"postCreateCommand": "apt-get update -y && apt-get install -y build-essential gdb git",
-	"postCreateCommand": "apt-get update -y && apt-get install ubuntu-release-upgrader-core -y build-essential gdb dotnet6 git sudo lsb-core nodejs && apt upgrade -y && git config --global user.email '35772421+anirugu@users.noreply.github.com' && git config --global user.name 'Anirudha Gupta'",
+	"postCreateCommand": "apt-get update -y && apt-get install ubuntu-release-upgrader-core -y build-essential gdb dotnet6 git sudo lsb-core nodejs && apt upgrade -y",
 	// Configure tool-specific properties.
 	// "customizations": {},
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
